@@ -1,6 +1,7 @@
 /*******************************************************************************
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
+Customized by Shelley V. Adams, @shelleyvadams
 *******************************************************************************/
 
 @import url(github-light.css);
@@ -71,25 +72,30 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
-  padding-bottom: 10px;
+h2,
+section section h1 {
+  margin-bottom: 20px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
+  border-bottom:thin dashed #cecece;
 }
 
-h3 {
+h3,
+section section section h1 {
   font-size: 24px;
 }
 
-h4 {
+h4,
+seciton section section section h1 {
   font-size: 21px;
 }
 
-h5 {
+h5,
+seciton section section section section h1 {
   font-size: 18px;
 }
 
-h6 {
+h6,
+section seciton section section section section h1 {
   font-size: 16px;
 }
 
@@ -120,6 +126,20 @@ a {
 
 a:hover, a:focus {text-decoration: underline;}
 
+nav a {
+  display:inline-block;
+  white-space:nowrap;
+  padding-left:0.5em;
+  margin-left:0.25em;
+  border-left:thin solid #cecece;
+}
+
+nav a:first-child {
+  border-left-style:none;
+  margin-left:0;
+  padding-left:0;
+}
+
 footer a {
   color: #F2F2F2;
   text-decoration: underline;
@@ -127,6 +147,37 @@ footer a {
 
 em {
   font-style: italic;
+}
+
+small {
+  font-size:80%;
+}
+
+small.tag {
+  color:#fff;
+  border-radius:0.25em;
+  background-color:#373737;
+  clear:right;
+  float:right;
+  padding:0 0.25em;
+  margin:0.25em 0 0 auto;
+}
+
+.tag.testing {
+  background-color: #0065B2;
+}
+
+.tag.stable {
+  color:#000;
+  background-color: #6BDF00;
+}
+
+.tag.unstable {
+  background-color: #DF0091;
+}
+
+.tag.deprecated {
+  background-color: #B20300;
 }
 
 strong {
@@ -139,7 +190,7 @@ img {
   max-width: 739px;
   padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
+  border: thin solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
@@ -158,29 +209,20 @@ p img {
 }
 
 pre, code {
-  width: 100%;
-  color: #222;
-  background-color: #fff;
-
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
+}
+
+pre {
+  color: #222;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  overflow: auto;
 
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-}
-
-pre {
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-  overflow: auto;
-}
-
-code {
-  padding: 3px;
-  margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 pre code {
@@ -188,11 +230,15 @@ pre code {
   box-shadow: none;
 }
 
+small code {
+  font-size:85%;
+}
+
 blockquote {
   color: #666;
   margin-bottom: 20px;
   padding: 0 0 0 20px;
-  border-left: 3px solid #bbb;
+  border-left: medium solid #bbb;
 }
 
 
@@ -219,6 +265,7 @@ dl dt {
 dl dd {
   padding-left: 20px;
   font-style: italic;
+  display:inline-block;
 }
 
 dl p {
@@ -234,7 +281,7 @@ hr {
 }
 
 table {
-  border: 1px solid #373737;
+  border: thin solid #373737;
   margin-bottom: 20px;
   text-align: left;
  }
@@ -248,7 +295,7 @@ th {
 
 td {
   padding: 10px;
-  border: 1px solid #373737;
+  border: thin solid #373737;
  }
 
 form {
@@ -312,6 +359,8 @@ Full-Width Styles
   font-size: 24px;
   font-weight: 300;
   background: none;
+  border-style:none;
+  margin-bottom:10px;
   text-shadow: #111 0px 0px 10px;
 }
 
@@ -356,8 +405,8 @@ Full-Width Styles
 
 #main_content_wrap {
   background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+  border-top: thin solid #111;
+  border-bottom: thin solid #111;
 }
 
 #main_content {
@@ -389,37 +438,41 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 32px;
+    font-size: 32px;
   }
 
   h1 {
     font-size: 28px;
   }
 
-  h2 {
+  h2,
+  section section h1 {
     font-size: 24px;
   }
 
-  h3 {
+  h3,
+  section section section h1 {
     font-size: 21px;
   }
 
-  h4 {
+  h4,
+  seciton section section section h1 {
     font-size: 18px;
   }
 
-  h5 {
+  h5,
+  seciton section section section section h1 {
     font-size: 14px;
   }
 
-  h6 {
+  h6,
+  section seciton section section section section h1 {
     font-size: 12px;
   }
 
   code, pre {
     min-width: 320px;
     max-width: 480px;
-    font-size: 11px;
   }
 
 }

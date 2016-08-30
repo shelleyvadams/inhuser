@@ -1,67 +1,335 @@
 <!DOCTYPE html>
-<html>
-
+<html prefix="
+              dce: http://purl.org/dc/elements/1.1/
+              dct: http://purl.org/dc/terms/
+              fea: http://vocab.data.gov/def/fea#
+              foaf: http://xmlns.com/foaf/0.1/
+              gd: http://reference.data.gov/def/govdata/
+              og: http://ogp.me/ns#
+              org: http://www.w3.org/ns/org#
+              owl: http://www.w3.org/2002/07/owl#
+              schema: http://schema.org/
+              vann: http://purl.org/vocab/vann/
+              vcard: http://www.w3.org/2006/vcard/ns#
+              vs: http://www.w3.org/2003/06/sw-vocab-status/ns#
+              xsd: http://www.w3.org/2001/XMLSchema#
+              ">
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="inhuser : INtegration for HUman SERvices ontology">
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>inhuser</title>
+    <title>inhuser : INtegration for HUman SERvices ontology</title>
   </head>
-
   <body>
-
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/shelleyvadams/inhuser">View on GitHub</a>
-
-          <h1 id="project_title">inhuser</h1>
-          <h2 id="project_tagline">INtegration for HUman SERvices ontology</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/shelleyvadams/inhuser/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/shelleyvadams/inhuser/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+      <header typeof="owl:Ontology" about="http://shelleyvadams.github.io/inhuser" class="inner">
+        <a id="forkme_banner" href="https://github.com/shelleyvadams/inhuser">View on GitHub</a>
+        <h1 property="vann:preferredNamespacePrefix" id="project_title">inhuser</h1>
+        <h2 property="dce:title" id="project_tagline">INtegration for HUman SERvices ontology</h2>
+        <section id="downloads">
+          <a class="zip_download_link" href="https://github.com/shelleyvadams/inhuser/zipball/master">Download this project as a .zip file</a>
+          <a class="tar_download_link" href="https://github.com/shelleyvadams/inhuser/tarball/master">Download this project as a tar.gz file</a>
+        </section>
+      </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>
-<a id="name" class="anchor" href="#name" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Name</h2>
+      <section typeof="owl:Ontology" about="http://shelleyvadams.github.io/inhuser" id="main_content" class="inner">
+        <meta property="dc:description" datatype="xsd:String" content="Name: Identify the stakeholders, their activities, and the surrounding context: organizations and agencies, providers and service users, populations and service areas, services and the needs they meet.&#xd;Describe: Get the right kind of information and the proper level of detail.&#xd;Locate: A single map marker can't accurately represent a city, multi-site organization, or mobile service. Different kinds of places need different types of location data, and they need to work with smartphone navigation apps, online web maps, Geographical Information Systems (GIS), and everything in between.&#xd;Align: Don't silo existing information, leverage it. Re-use data from government reporting, search engine optimization (SEO), and social media marketing through alignment with a diverse set of vocabularies including the Federal Enterprise Architecture, Government Data vocabulary, vCard-RDF, Schema.org and Open Graph Protocol.">
+        <div property="dc:description" datatype="rdf:HTML">
+          <h2>Name</h2>
+          <p>Identify the stakeholders, their activities, and the surrounding context: organizations and agencies, providers and service users, populations and service areas, services and the needs they meet.</p>
+          <h2>Describe</h2>
+          <p>Get the right kind of information and the proper level of detail.</p>
+          <h2>Locate</h2>
+          <p>A single map marker can't accurately represent a city, multi-site organization, or mobile service. Different kinds of places need different types of location data, and they need to work with smartphone navigation apps, online web maps, Geographical Information Systems (GIS), and everything in between.</p>
+          <h2>Align</h2>
+          <p>Don't silo existing information, leverage it. Re-use data from government reporting, search engine optimization (SEO), and social media marketing through alignment with a diverse set of vocabularies including the <a href="http://vocab.data.gov/def/fea/index.html">Federal Enterprise Architecture</a>, <a href="http://vocab.data.gov/gd/index.html">Government Data vocabulary</a>, <a href="https://www.w3.org/TR/vcard-rdf/">vCard-RDF</a>, <a href="http://schema.org/">Schema.org</a> and <a href="http://ogp.me/">Open Graph Protocol</a>.</p>
+        </div>
+        <p>Terms in <abbr title="INtegration for HUman SERvices">inhuser</abbr> have equivalents in:</p>
+        <ul>
+          <li><a rel="rdfs:seeAlso" href="http://dublincore.org/documents/dcmi-terms/"><abbr title="Dublin Core Metadata Initiative">DCMI</abbr> Metadata Terms</a> <dfn>dct</dfn></li>
+          <li><a rel="rdfs:seeAlso" href="http://vocab.data.gov/def/fea/index.html">Federal Enterprise Architecture</a> <dfn>fea</dfn></li>
+          <li><a rel="rdfs:seeAlso" href="http://xmlns.com/foaf/spec/">Friend of a Friend</a> <dfn>foaf</dfn></li>
+          <li><a rel="rdfs:seeAlso" href="http://vocab.data.gov/gd/index.html">Government Data vocabulary</a> <dfn>gd</dfn></li>
+          <li><a rel="rdfs:seeAlso" href="http://schema.org/">Schema.org</a> <dfn>schema</dfn></li>
+          <li><a rel="rdfs:seeAlso" href="http://ogp.me/">Open Graph Protocol</a> <dfn>og</dfn></li>
+          <li><a rel="rdfs:seeAlso" href="https://www.w3.org/TR/vocab-org/">The Organization Ontology</a> <dfn>org</dfn></li>
+          <li><a rel="rdfs:seeAlso" href="https://www.w3.org/TR/vcard-rdf/">vCard-RDF</a> <dfn>vcard</dfn></li>
+        </ul>
+      </section>
+      <section class="inner">
+        <h1>Classes</h1>
+        <nav>
+          <a href="#Address">Address</a>
+          <a href="#City">City</a>
+          <a href="#Country">Country</a>
+          <a href="#Organization">Organization</a>
+          <a href="#Person">Person</a>
+          <a href="#State">State</a>
+        </nav>
+        <section typeof="owl:Class" about="Address" id="Address">
+          <h1><span property="rdfs:label">Address</span>
+            <small class="tag testing" property="vs:term_status">testing</small></h1>
+          <p property="rdfs:comment">A street or postal address.</p>
+          <dl>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentClass" resource="schema:PostalAddress">schema:PostalAddress</dd>
+            <dd property="owl:equivalentClass" resource="vcard:Address">vcard:Address</dd>
+          </dl>
+        </section>
+        <section typeof="owl:Class" about="City" id="City">
+          <h1><span property="rdfs:label">City</span>
+            <small class="tag testing" property="vs:term_status">testing</small></h1>
+          <p property="rdfs:comment">A city, town, village, or an incorporated or unincorporated area.</p>
+          <dl>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentClass" resource="schema:City">schema:City</dd>
+          </dl>
+        </section>
+        <section typeof="owl:Class" about="Country" id="Country">
+          <h1><span property="rdfs:label">Country</span>
+            <small class="tag testing" property="vs:term_status">testing</small></h1>
+          <p property="rdfs:comment">An soverign nation-state.</p>
+          <dl>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentClass" resource="gd:Country">gd:Country</dd>
+            <dd property="owl:equivalentClass" resource="schema:Country">schema:Country</dd>
+          </dl>
+        </section>
+        <section typeof="owl:Class" about="Person" id="Person">
+          <h1><span property="rdfs:label">Person</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <p property="rdfs:comment">An individual human being.</p>
+          <dl>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentClass" resource="foaf:Person">foaf:Person</dd>
+            <dd property="owl:equivalentClass" resource="schema:Person">schema:Person</dd>
+          </dl>
+        </section>
+        <section typeof="owl:Class" about="Organization" id="Organization">
+          <h1><span property="rdfs:label">Organization</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <dl>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentClass" resource="fea:OrganizationEntity">fea:OrganizationEntity</dd>
+            <dd property="owl:equivalentClass" resource="foaf:Organization">foaf:Organization</dd>
+            <dd property="owl:equivalentClass" resource="org:Organization">org:Organization</dd>
+            <dd property="owl:equivalentClass" resource="schema:Organization">schema:Organization</dd>
+          </dl>
+        </section>
+        <section typeof="owl:Class" about="State">
+          <h1><span property="rdfs:label">State</span>
+            <small class="tag testing" property="vs:term_status">testing</small></h1>
+          <p property="rdfs:comment">A major national subdivision, such as a state or territory in the United States or a Canadian province.</p>
+          <dl>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentClass" resource="gd:State">gd:State</dd>
+            <dd property="owl:equivalentClass" resource="schema:State">schema:State</dd>
+          </dl>
+        </section>
+      </section>
 
-<p>Identify the stakeholders, their activities, and the surrounding context: organizations and agencies, providers and service users, populations and service areas, services and the needs they meet.</p>
-
-<h2>
-<a id="describe" class="anchor" href="#describe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Describe</h2>
-
-<p>Get the right kind of information and the proper level of detail. <g-emoji alias="white_check_mark" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></p>
-
-<h2>
-<a id="locate" class="anchor" href="#locate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Locate</h2>
-
-<p>A single map marker <g-emoji alias="round_pushpin" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cd.png">📍</g-emoji> can't accurately represent a city, multi-site organization, or mobile service. Different kinds of places need different types of location data, and they need to work with smartphone navigation apps, online web maps, Geographical Information Systems (GIS), and everything in between.</p>
-
-<h2>
-<a id="align" class="anchor" href="#align" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Align</h2>
-
-<p>Don't silo existing information, leverage it. Re-use <g-emoji alias="recycle" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/267b.png">♻️</g-emoji> data from government reporting, search engine optimization (SEO), and social media marketing through alignment with a diverse set of vocabularies including the <a href="http://vocab.data.gov/def/fea/index.html">Federal Enterprise Architecture</a>, <a href="http://vocab.data.gov/gd/index.html">Government Data vocabulary</a>, <a href="https://www.w3.org/TR/vcard-rdf/">vCard-RDF</a>, <a href="http://schema.org/">Schema.org</a> and <a href="http://ogp.me/">Open Graph Protocol</a>.</p>
+      <section class="inner">
+        <h1>Properties</h1>
+        <nav>
+          <a href="#address">address</a>
+          <a href="#additionalName">additionalName</a>
+          <a href="#affiliation">affiliation</a>
+          <a href="#country">country</a>
+          <a href="#familyName">familyName</a>
+          <a href="#givenName">givenName</a>
+          <a href="#locality">locality</a>
+          <a href="#name">name</a>
+          <a href="#postalCode">postalCode</a>
+          <a href="#postOfficeBoxNumber">postOfficeBoxNumber</a>
+          <a href="#region">region</a>
+          <a href="#streetAddress">streetAddress</a>
+        </nav>
+        <section typeof="owl:ObjectProperty" about="address" id="address">
+          <h1><span property="rdfs:label">address</span>
+            <small class="tag testing" property="vs:term_status">testing</small></h1>
+          <dl>
+            <dt>Data type</dt>
+            <dd><a property="rdfs:range" href="http://shelleyvadams.github.io/inhuser#Address">Address</a></dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Organization">Organization</a></dd>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Person">Person</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:address">schema:address</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:adr">vcard:adr</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:hasAddress">vcard:hasAddress</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DataProperty" about="additionalName" id="additionalName">
+          <h1><span property="rdfs:label">additionalName</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <p property="rdfs:comment">E.g., a middle or maiden name.</p>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Person">Person</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:additionalName">schema:additionalName</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:additional-name">vcard:additional-name</dd>
+          </dl>
+        </section>
+        <section typeof="owl:ObjectProperty" about="affiliation" id="affiliation">
+          <h1><span property="rdfs:label">affiliation</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <dl>
+            <dt>Data type</dt>
+            <dd><a property="rdfs:range" href="http://shelleyvadams.github.io/inhuser#Organization">Organization</a></dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Person">Person</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:affiliation">schema:affiliation</dd>
+          </dl>
+        </section>
+        <section typeof="rdf:Property" about="country" id="country">
+          <h1><span property="rdfs:label">country</span>
+            <small class="tag testing" property="vs:term_status">testing</small></h1>
+          <dl>
+            <dt>Data types</dt>
+            <dd><a property="rdfs:range" href="http://shelleyvadams.github.io/inhuser#Country">Country</a></dd>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Address">Address</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:addressCountry">schema:addressCountry</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:country-name">vcard:country-name</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DataProperty" about="familyName" id="familyName">
+          <h1><span property="rdfs:label">familyName</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Person">Person</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="foaf:familyName">foaf:familyName</dd>
+            <dd property="owl:equivalentProperty" resource="schema:familyName">schema:familyName</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:family-name">vcard:family-name</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DataProperty" about="givenName" id="givenName">
+          <h1><span property="rdfs:label">givenName</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Person">Person</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="foaf:givenName">foaf:givenName</dd>
+            <dd property="owl:equivalentProperty" resource="schema:givenName">schema:givenName</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:given-name">vcard:given-name</dd>
+          </dl>
+        </section>
+        <section typeof="rdf:Property" about="locality" id="locality">
+          <h1><span property="rdfs:label">locality</span>
+            <small class="tag testing" property="vs:term_status">testing</small></h1>
+          <p property="rdfs:comment">The name of a village, town, or city in an address.</p>
+          <dl>
+            <dt>Data types</dt>
+            <dd><a property="rdfs:range" href="http://shelleyvadams.github.io/inhuser#City">City</a></dd>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Address">Address</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:addressLocality">schema:addressLocality</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:locality">vcard:locality</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DataProperty" about="name" id="name">
+          <h1><span property="rdfs:label">name</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd>Any <em property="rdfs:domain" resource="owl:Thing">Thing</em></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="dct:title">dct:title</dd>
+            <dd property="owl:equivalentProperty" resource="foaf:name">foaf:name</dd>
+            <dd property="owl:equivalentProperty" resource="og:title">og:title</dd>
+            <dd property="owl:equivalentProperty" resource="schema:name">schema:name</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:fn">vcard:fn</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DataProperty" about="postalCode" id="postalCode">
+          <h1><span property="rdfs:label">postalCode</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <p property="rdfs:comment">E.g., a <abbr title="United States">U.S.</abbr> ZIP code.</p>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Address">Address</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:postalCode">schema:postalCode</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:postal-code">vcard:postal-code</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DataProperty" about="postOfficeBoxNumber" id="postOfficeBoxNumber">
+          <h1><span property="rdfs:label">postOfficeBoxNumber</span>
+            <small class="tag deprecated" property="vs:term_status">deprecated</small></h1>
+          <meta property="owl:deprecated" datatype="xsd:boolean" content="true">
+          <p><span property="rdfs:comment">Provided for compatability with schema.org.</span>
+            For new data, use <a property="dc:isReplacedBy" href="http://shelleyvadams.github.io/inhuser#streetAddress">streetAddress</a> instead.</p>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Used with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Address">Address</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:postOfficeBoxNumber">schema:postOfficeBoxNumber</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:post-office-box">vcard:post-office-box</dd>
+          </dl>
+        </section>
+        <section typeof="rdf:Property" about="region" id="region">
+          <h1><span property="rdfs:label">region</span>
+            <small class="tag testing" property="vs:term_status">testing</small></h1>
+          <p property="rdfs:comment">The state, territory, or province in an address.</p>
+          <dl>
+            <dt>Data types</dt>
+            <dd><a property="rdfs:range" href="http://shelleyvadams.github.io/inhuser#State">State</a></dd>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Address">Address</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:addressRegion">schema:addressRegion</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:region">vcard:region</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DataProperty" about="streetAddress" id="streetAddress">
+          <h1><span property="rdfs:label">streetAddress</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser#Address">Address</a></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="schema:streetAddress">schema:streetAddress</dd>
+            <dd property="owl:equivalentProperty" resource="vcard:street-address">vcard:street-address</dd>
+          </dl>
+        </section>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">inhuser maintained by <a href="https://github.com/shelleyvadams">shelleyvadams</a></p>
+      <footer typeof="owl:Ontology" about="http://shelleyvadams.github.io/inhuser" class="inner">
+        <p class="copyright"><a property="vann:preferredNamespaceUri" href="http://shelleyvadams.github.io/inhuser#">inhuser</a>
+          maintained by <a property="dc:creator" href="https://github.com/shelleyvadams">shelleyvadams</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
