@@ -171,6 +171,7 @@
           <a href="#additionalName">additionalName</a>
           <a href="#affiliation">affiliation</a>
           <a href="#country">country</a>
+          <a href="#description">description</a>
           <a href="#familyName">familyName</a>
           <a href="#givenName">givenName</a>
           <a href="#locality">locality</a>
@@ -233,6 +234,20 @@
             <dt>Aligned with</dt>
             <dd property="owl:equivalentProperty" resource="schema:addressCountry">schema:addressCountry</dd>
             <dd property="owl:equivalentProperty" resource="vcard:country-name">vcard:country-name</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DatatypeProperty" about="description" id="description">
+          <h1><span property="rdfs:label">description</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd>Any <em property="rdfs:domain" resource="owl:Thing">Thing</em></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="dct:description">dct:description</dd>
+            <dd property="owl:equivalentProperty" resource="og:description">og:description</dd>
+            <dd property="owl:equivalentProperty" resource="schema:description">schema:description</dd>
           </dl>
         </section>
         <section typeof="owl:DatatypeProperty" about="familyName" id="familyName">
