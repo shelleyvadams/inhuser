@@ -170,7 +170,7 @@
           <a href="#address">address</a>
           <a href="#additionalName">additionalName</a>
           <a href="#affiliation">affiliation</a>
-					<a href="#alternateName">alternateName</a>
+          <a href="#alternateName">alternateName</a>
           <a href="#country">country</a>
           <a href="#description">description</a>
           <a href="#familyName">familyName</a>
@@ -181,6 +181,7 @@
           <a href="#postOfficeBoxNumber">postOfficeBoxNumber</a>
           <a href="#region">region</a>
           <a href="#streetAddress">streetAddress</a>
+          <a href="#uri">uri</a>
         </nav>
         <section typeof="owl:ObjectProperty" about="address" id="address">
           <h1><span property="rdfs:label">address</span>
@@ -380,6 +381,22 @@
             <dd property="owl:equivalentProperty" resource="schema:streetAddress">schema:streetAddress</dd>
             <dd property="owl:equivalentProperty" resource="vcard:street-address">vcard:street-address</dd>
           </dl>
+        </section>
+        <section typeOf="owl:DatatypeProperty" about="uri" id="uri">
+          <h1><span property="rdfs:label">uri</span>
+            <small class="tag unstable" property="vs:term_status">unstable</small></h1>
+          <p property="rdfs:comment">A Uniform Resource Identifier (URI), independent of type, namespace, or protocol. This includes, but is not limited to, the Uniform Resource Locater (URL) scheme.</p>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:anyURI">URI</dd>
+            <dt>Use with</dt>
+            <dd>Any <em property="rdfs:domain" resource="owl:Thing">Thing</em></dd>
+          </dl>
+          <p>More information</p>
+          <ul>
+            <li><a rel="rdfs:seeAlso" href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">Wikipedia Article: Uniform Resource Identifier</a></li>
+            <li><a rel="rdfs:seeAlso" href="http://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml"><abbr title="Internet Assigned Numbers Authority">IANA</abbr>: Uniform Resource Identifier (URI) Schemes</a></li>
+          </ul>
         </section>
       </section>
     </div>
