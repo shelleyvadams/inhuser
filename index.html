@@ -170,6 +170,7 @@
           <a href="#address">address</a>
           <a href="#additionalName">additionalName</a>
           <a href="#affiliation">affiliation</a>
+					<a href="#alternateName">alternateName</a>
           <a href="#country">country</a>
           <a href="#description">description</a>
           <a href="#familyName">familyName</a>
@@ -220,6 +221,19 @@
             <dd><a property="rdfs:domain" href="http://shelleyvadams.github.io/inhuser/#Person">Person</a></dd>
             <dt>Aligned with</dt>
             <dd property="owl:equivalentProperty" resource="schema:affiliation">schema:affiliation</dd>
+          </dl>
+        </section>
+        <section typeof="owl:DatatypeProperty" about="alternateName" id="alternateName">
+          <h1><span property="rdfs:label">alternateName</span>
+            <small class="tag stable" property="vs:term_status">stable</small></h1>
+          <dl>
+            <dt>Data type</dt>
+            <dd property="rdfs:range" resource="xsd:string">Text</dd>
+            <dt>Use with</dt>
+            <dd>Any <em property="rdfs:domain" resource="owl:Thing">Thing</em></dd>
+            <dt>Aligned with</dt>
+            <dd property="owl:equivalentProperty" resource="dct:alternative">dct:alternative</dd> 
+            <dd property="owl:equivalentProperty" resource="schema:alternateName">schema:alternateName</dd> 
           </dl>
         </section>
         <section typeof="rdf:Property" about="country" id="country">
