@@ -5,6 +5,7 @@
               fea: http://vocab.data.gov/def/fea#
               foaf: http://xmlns.com/foaf/0.1/
               gd: http://reference.data.gov/def/govdata/
+              gn: http://www.geonames.org/ontology#
               og: http://ogp.me/ns#
               org: http://www.w3.org/ns/org#
               owl: http://www.w3.org/2002/07/owl#
@@ -53,6 +54,7 @@
           <li><a rel="rdfs:seeAlso" href="http://dublincore.org/documents/dcmi-terms/"><abbr title="Dublin Core Metadata Initiative">DCMI</abbr> Metadata Terms</a> <dfn>dct</dfn></li>
           <li><a rel="rdfs:seeAlso" href="http://vocab.data.gov/def/fea/index.html">Federal Enterprise Architecture</a> <dfn>fea</dfn></li>
           <li><a rel="rdfs:seeAlso" href="http://xmlns.com/foaf/spec/">Friend of a Friend</a> <dfn>foaf</dfn></li>
+          <li><a rel="rdfs:seeAlso" href="http://www.geonames.org/ontology/documentation.html">GeoNames</a> <dfn>gn</dfn></li>
           <li><a rel="rdfs:seeAlso" href="http://vocab.data.gov/gd/index.html">Government Data vocabulary</a> <dfn>gd</dfn></li>
           <li><a rel="rdfs:seeAlso" href="http://schema.org/">Schema.org</a> <dfn>schema</dfn></li>
           <li><a rel="rdfs:seeAlso" href="http://ogp.me/">Open Graph Protocol</a> <dfn>og</dfn></li>
@@ -86,6 +88,16 @@
           <p property="rdfs:comment">A city, town, village, or an incorporated or unincorporated area.</p>
           <dl>
             <dt>Aligned with</dt>
+            <dd property="owl:equivalentClass" resource="_:gnCityRestriction">
+              <div typeof="owl:Restriction" about="_:gnCityRestriction">
+                <span property="rdfs:comment">GeoNames: Populated Place</span>
+                <small><code>gn:Feature</code> with
+                  <code>
+                    <span property="owl:onProperty" resource="gn:featureCode">gn:featureCode</span>=&quot;<span property="owl:hasValue" resource="gn:P.PPL">gn:P.PPL</span>&quot;
+                  </code>
+                </small>
+              </div>
+            </dd>
             <dd property="owl:equivalentClass" resource="schema:City">schema:City</dd>
           </dl>
         </section>
@@ -96,6 +108,16 @@
           <dl>
             <dt>Aligned with</dt>
             <dd property="owl:equivalentClass" resource="gd:Country">gd:Country</dd>
+            <dd property="owl:equivalentClass" resource="_:countryRestrict">
+              <div typeof="owl:Restriction" about="_:countryRestrict">
+                <span property="rdfs:comment">GeoNames: Country</span>
+                <small><code>gn:Feature</code> with
+                  <code>
+                    <span property="owl:onProperty" resource="gn:featureCode">gn:featureCode</span>=&quot;<span property="owl:hasValue" resource="gn:A.PCLI">gn:A.PCLI</span>&quot;
+                  </code>
+                </small>
+              </div>
+            </dd>
             <dd property="owl:equivalentClass" resource="schema:Country">schema:Country</dd>
           </dl>
         </section>
@@ -127,6 +149,16 @@
           <dl>
             <dt>Aligned with</dt>
             <dd property="owl:equivalentClass" resource="gd:State">gd:State</dd>
+            <dd property="owl:equivalentClass" resource="_:stateRestrict">
+              <div typeof="owl:Restriction" about="_:stateRestrict">
+                <span property="rdfs:comment">GeoNames: State</span>
+                <small><code>gn:Feature</code> with
+                  <code>
+                    <span property="owl:onProperty" resource="gn:featureCode">gn:featureCode</span>=&quot;<span property="owl:hasValue" resource="gn:A.ADM1">gn:A.ADM1</span>&quot;
+                  </code>
+                </small>
+              </div>
+            </dd>
             <dd property="owl:equivalentClass" resource="schema:State">schema:State</dd>
           </dl>
         </section>
